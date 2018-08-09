@@ -1,7 +1,7 @@
-#adultAllowableRides, #childrenAllowableRides {
+#pairingResult {
   display: none;
 }
 
 .highlight {
-  background-color: yellow;  
+  background-color: yellow;
 }
