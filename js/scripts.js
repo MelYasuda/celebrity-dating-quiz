@@ -1,21 +1,57 @@
 $(document).ready(function() {
 
+$("select#gender").submit(function(event){
+  var gender = $("#gender").val();
+  var interest = $("#interest").val();
+  event.preventDefault();
 
-if (gender === optionA) {
-  $("#gender").show("Please make sure all selections have been made.");
+  // if (gender === A) {          //No option
+  //   $("#gender").show("Please make sure all selections have been made.");
 
-
-  if (#gender === optionB) {
-    $('#drinks').show();
-  } else if (age === optionA) {
-    alert("Now don't go crazy!");
-    $('#drinks').show();
-  } else {
-    $('#under-21').show();
+if (gender === B) {
+  if(interest === B){
+    $("img#1person").toggle();
+    $(".intro").toggle();
+    $("#pairingResult").toggle();
+    else if(interest === C){
+         $("img#2person").toggle();
+         $(".intro").toggle();
+         $("#pairingResult").toggle();
+     }
+   else if(interest === D){
+        $("img#3person").toggle();
+        $(".intro").toggle();
+        $("#pairingResult").toggle();
+    }
   }
+  // var quote = (100 - age) * 3;
+  // if (#gender === 'A')
+  // {
+  //   prompt('Please enter your selection.')
+  // }
+  // else if (gender === 'B' && '1')
+  //      {
+  //        result = "Androgynous Andy"
+  //      }
+  //  }
+
+  $("#pairingResult").show();
+  $("#result").text(result);
 });
 
-    prompt(result);
+
+//
+//   if (#gender === optionB) {
+//     $('#drinks').show();
+//   } else if (age === optionA) {
+//     alert("Now don't go crazy!");
+//     $('#drinks').show();
+//   } else {
+//     $('#under-21').show();
+//   }
+// });
+//
+//     prompt(result);
 });
 
 

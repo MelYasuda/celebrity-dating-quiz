@@ -9,16 +9,16 @@
   </head>
   <body>
     <div class="container">
-
+      <div class="intro">
       <h1>Take the Celebrity Dating Quiz to see which you pair up with!</h1>
 
-      <div id="gender">
+      <div>
         <h2>Gender:</h2>
-        <select class="form-control">
-          <option A>Make a selection</optionA>
-          <option B>Male</option>
-          <option C>Female</option>
-          <option D>Fluid</option>
+        <select id="gender" class="form-control">
+          <option value="A">Make a selection</option>
+          <option value="B">Male</option>
+          <option value="C">Female</option>
+          <option value="D">Fluid</option>
         </select>
       </div>
 <!--
@@ -38,13 +38,22 @@
       <div id="interest">
         <h2>Interests</h2>
         <select class="form-control">
-          <option 0>Make a selection</option>
-          <option 1>Party</option>
-          <option 2>Video Games</option>
-          <option 3>Movie</option>
+          <option value="0">Make a selection</option>
+          <option value="1">Party</option>
+          <option value="2">Video Games</option>
+          <option value="3">Movie</option>
         </select>
       </div>
     <button type="submit" class="btn"><h2>Pair!</h2></button>
+
+      <div id="pairingResult">
+       <h2>The Result of you answers yields the following Celebrity Pairing</h2>
+        <p>The Result of you answers yields the following Celebrity Pairing: <span id="result"></span></p>
+          <img src="img/andy.jpeg" id="1person" alt="Andy">
+          <img src="img/sam.jpeg" id="2person" alt="Sam">
+          <img src="img/lex.jpeg" id="3person" alt="Lex">
+
+      </div>
     </div>
   </body>
 </html>
